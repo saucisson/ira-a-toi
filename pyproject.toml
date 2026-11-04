@@ -94,7 +94,7 @@ convention = "google"
 # fixed literals, no untrusted input ever reaches argv.
 "scripts/*" = ["T201", "S603"]
 "ci/*" = ["T201", "PLR2004", "D"]
-"contrat/*" = ["PLR2004", "D", "I001", "N802", "ANN"]
+"contrat/*" = ["PLR2004", "D", "I001", "N802", "ANN", "RUF012"]
 "tools/notify/tests/**/*" = [
     "S101",     # asserts are the point of tests
     "D",        # docstrings optional in tests
