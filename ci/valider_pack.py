@@ -21,7 +21,7 @@ from pathlib import Path
 RACINE = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(RACINE / "contrat"))
 
-from pack import ErreurCI, Pack, PYDANTIC, invariants_ci  # noqa: E402
+from pack import PYDANTIC, ErreurCI, Pack, invariants_ci  # noqa: E402
 
 
 def charger_pack(dossier: Path) -> tuple[dict, str]:

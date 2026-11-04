@@ -1,5 +1,4 @@
-"""
-contrat.pack — le contrat d'œuvre de « Ira à toi » (schéma v1.1).
+"""contrat.pack — le contrat d'œuvre de « Ira à toi » (schéma v1.1).
 
 Une œuvre est un dossier Git publié tel quel sur le CDN (immuable) ;
 le serveur n'enregistre que sa version, le client télécharge ce dont il
