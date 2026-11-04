@@ -1,0 +1,20 @@
+{
+  "enrichissements": [
+    {
+      "id": "lexique-bromure",
+      "type": "lexique",
+      "titre": "Bromure de potassium",
+      "contenu": "Sédatif très prescrit au XIXᵉ siècle contre l'insomnie et l'anxiété — le médecin du narrateur en fait le remède de sa fièvre.",
+      "genere_par_ia": true,
+      "valide_par": "designer narratif"
+    },
+    {
+      "id": "note-trois-mats",
+      "type": "note",
+      "titre": "Le trois-mâts brésilien",
+      "contenu": "Le navire que le narrateur salue « sans savoir pourquoi » vient du Brésil — le récit y rattache plus loin l'origine de la présence.",
+      "genere_par_ia": true,
+      "valide_par": "designer narratif"
+    }
+  ]
+}

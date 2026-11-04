@@ -1,0 +1,102 @@
+{
+  "cadences": [
+    {
+      "id": "standard",
+      "description": "~3 semaines réelles pour l'ensemble du journal (extrait : 5 entrées).",
+      "regles": {
+        "entree-08-mai": {
+          "ancre": "t0",
+          "push": false
+        },
+        "entree-12-mai": {
+          "decalage_jours": 1,
+          "plage": {
+            "debut": "08:00:00",
+            "fin": "10:00:00"
+          },
+          "jitter_minutes": 5,
+          "titre_notification": "Le journal — nouvelle entrée"
+        },
+        "entree-16-mai": {
+          "decalage_jours": 1,
+          "plage": {
+            "debut": "19:00:00",
+            "fin": "21:00:00"
+          },
+          "jitter_minutes": 10,
+          "titre_notification": "Le journal — nouvelle entrée"
+        },
+        "entree-18-mai": {
+          "decalage_jours": 1,
+          "heure": "23:12:00",
+          "jitter_minutes": 3,
+          "repli_sans_optin_nuit": {
+            "debut": "08:00:00",
+            "fin": "10:00:00"
+          },
+          "titre_notification": "Le journal — une heure tardive"
+        },
+        "entree-25-mai": {
+          "decalage_jours": 2,
+          "plage": {
+            "debut": "08:00:00",
+            "fin": "10:00:00"
+          },
+          "jitter_minutes": 5,
+          "titre_notification": "Le journal — nouvelle entrée"
+        }
+      }
+    },
+    {
+      "id": "sprint",
+      "description": "Mode compressé pour tests et QA « voyage dans le temps ».",
+      "regles": {
+        "entree-08-mai": {
+          "ancre": "t0",
+          "plage": {
+            "debut": "08:00:00",
+            "fin": "22:00:00"
+          },
+          "jitter_minutes": 2,
+          "push": false
+        },
+        "entree-12-mai": {
+          "ancre": "lecture-precedente",
+          "plage": {
+            "debut": "08:00:00",
+            "fin": "22:00:00"
+          },
+          "jitter_minutes": 2,
+          "titre_notification": "Le journal — nouvelle entrée"
+        },
+        "entree-16-mai": {
+          "ancre": "lecture-precedente",
+          "plage": {
+            "debut": "08:00:00",
+            "fin": "22:00:00"
+          },
+          "jitter_minutes": 2,
+          "titre_notification": "Le journal — nouvelle entrée"
+        },
+        "entree-18-mai": {
+          "ancre": "lecture-precedente",
+          "plage": {
+            "debut": "08:00:00",
+            "fin": "22:00:00"
+          },
+          "jitter_minutes": 2,
+          "titre_notification": "Le journal — nouvelle entrée"
+        },
+        "entree-25-mai": {
+          "ancre": "lecture-precedente",
+          "plage": {
+            "debut": "08:00:00",
+            "fin": "22:00:00"
+          },
+          "jitter_minutes": 2,
+          "titre_notification": "Le journal — nouvelle entrée"
+        }
+      }
+    }
+  ]
+}

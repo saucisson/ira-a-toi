@@ -1,0 +1,51 @@
+{
+  "id": "le-horla-maupassant-1887",
+  "titre": "Le Horla",
+  "edition": "Version définitive (1887)",
+  "ligne": "cabinet-fantastique",
+  "horloge": "personnelle",
+  "auteur": {
+    "slug": "maupassant",
+    "nom": "Guy de Maupassant",
+    "naissance": "1850-08-05",
+    "mort": "1893-07-06"
+  },
+  "source": {
+    "support": "Recueil Le Horla, P. Ollendorff (mai 1887) — édition 1895, p. 3-68",
+    "publication": "1887-05-01",
+    "url": "https://fr.wikisource.org/wiki/Le_Horla_(recueil,_Ollendorff_1895)/Le_Horla"
+  },
+  "annee_originelle": 1887,
+  "pitch": "Si tu ne vas pas au Horla, le Horla ira à toi.",
+  "sensibilites": {
+    "push_nuit": true,
+    "avertissement": "Récit de hantise — push nocturnes rares (2-3 sur l'ensemble), sur opt-in explicite prévisualisé."
+  },
+  "peau": {
+    "display": [
+      {
+        "usage": "dates",
+        "fichier": "assets/fonts/journal-dates.woff2",
+        "licence": "OFL"
+      },
+      {
+        "usage": "titres",
+        "fichier": "assets/fonts/journal-titres.woff2",
+        "licence": "OFL"
+      }
+    ],
+    "palette": {
+      "encre": "#1f1a15",
+      "papier": "#f2e9d8",
+      "corruption": "#6d1a1a"
+    }
+  },
+  "couverture": "assets/couverture.png",
+  "credits": [
+    "Texte : Guy de Maupassant (1850-1893), domaine public",
+    "Source transcrite : Wikisource / BnF — Le Horla, Ollendorff 1895",
+    "Découpage, horodatages et design : le studio"
+  ],
+  "hash_source": "f66177f2a855816fe8eea741237ff5611276cb56ace3c7b77284d7c029bc5fda",
+  "separateur_fragments": "\n\n"
+}

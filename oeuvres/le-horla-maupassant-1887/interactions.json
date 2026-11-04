@@ -1,0 +1,62 @@
+{
+  "etats_joueur": [
+    {
+      "id": "a-salue-le-brésilien",
+      "description": "Le joueur a salué le trois-mâts au premier jour."
+    },
+    {
+      "id": "a-ecrit",
+      "description": "Le joueur a confié une page à son carnet, la nuit du 16 mai."
+    },
+    {
+      "id": "a-vu-la-corruption",
+      "description": "Le joueur a repéré le mot qui a changé dans l'entrée du 18 mai."
+    }
+  ],
+  "gestes": [
+    {
+      "id": "saluer-le-brésilien",
+      "fragment_id": "entree-08-mai",
+      "type": "choix",
+      "invite": "Un superbe trois-mâts brésilien, tout blanc, admirablement propre et luisant, défile devant votre grille. Le saluez-vous ?",
+      "choix": [
+        {
+          "id": "saluer",
+          "libelle": "Le saluer",
+          "effets": [
+            "a-salue-le-brésilien"
+          ]
+        },
+        {
+          "id": "regarder",
+          "libelle": "Seulement le regarder passer",
+          "effets": []
+        }
+      ]
+    },
+    {
+      "id": "ecrire-la-nuit",
+      "fragment_id": "entree-16-mai",
+      "type": "ecriture",
+      "invite": "Le narrateur n'a pas sommeil. Écrivez dans le carnet — personne ne le lira.",
+      "ecriture": {
+        "max_caracteres": 500
+      },
+      "effets": [
+        "a-ecrit"
+      ]
+    },
+    {
+      "id": "trouver-le-mot-change",
+      "fragment_id": "entree-18-mai",
+      "type": "trouver",
+      "condition": "relu",
+      "invite": "Relisez l'entrée du 18 mai : un mot a changé depuis votre première lecture. Lequel ?",
+      "cible": "me réveiller",
+      "effets": [
+        "a-vu-la-corruption"
+      ]
+    }
+  ],
+  "fins": []
+}
