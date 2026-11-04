@@ -21,7 +21,7 @@ from pathlib import Path
 RACINE = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(RACINE / "contrat"))
 
-from pack import ErreurCI, PYDANTIC, Pack, invariants_ci  # noqa: E402
+from pack import PYDANTIC, ErreurCI, Pack, invariants_ci  # noqa: E402
 
 
 def charger_pack(dossier: Path) -> tuple[dict, str]:
@@ -46,7 +46,9 @@ def charger_pack(dossier: Path) -> tuple[dict, str]:
 
 
 def main(argv: list[str]) -> int:
-    if len(argv) != 2:
+    """Entry point for the CI validation script."""
+    expected_arg_count = 2
+    if len(argv) != expected_arg_count:
         print(__doc__)
         return 2
     dossier = Path(argv[1])

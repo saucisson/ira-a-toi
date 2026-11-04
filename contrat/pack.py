@@ -1,5 +1,4 @@
-"""
-contrat.pack — le contrat d'œuvre de « Ira à toi » (schéma v1.1).
+"""contrat.pack — le contrat d'œuvre de « Ira à toi » (schéma v1.1).
 
 Une œuvre est un dossier Git publié tel quel sur le CDN (immuable) ;
 le serveur n'enregistre que sa version, le client télécharge ce dont il
@@ -30,9 +29,11 @@ from __future__ import annotations
 
 import hashlib
 import re
-from datetime import date, datetime, time
 from enum import StrEnum
-from typing import Literal, Self
+from typing import Literal, Self, TYPE_CHECKING
+
+if TYPE_CHECKING:
+    from datetime import date, datetime, time
 
 try:
     from pydantic import BaseModel, Field, model_validator
