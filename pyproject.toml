@@ -92,13 +92,14 @@ convention = "google"
 "tools/notify/src/notify/main.py" = ["T201", "S101"]
 # scripts/*: T201 stdout is the interface; S603 git/uv are invoked with
 # fixed literals, no untrusted input ever reaches argv.
-"scripts/*" = ["T201", "S603", "TC003", "E501", "RET504", "C420"]
+"scripts/*" = ["T201", "S603", "S607", "TC003", "E501", "RET504", "C420"]
 "ci/*" = ["T201", "PLR2004", "D"]
 "contrat/*" = [
     "PLR2004",
     "D",
     "I001",
     "N802",
+    "N818",
     "ANN",
     "RUF012",
     "RUF003",
