@@ -91,4 +91,5 @@ jobs:
       - name: pip-audit of the locked graph
         run: |
           uv export --locked --format requirements-txt --output-file requirements.txt
-          grep -v "^-e " requirements.txt | uvx pip-audit --requirement - --strict
+          grep -v "^-e " requirements.txt > requirements-filtered.txt
+          uvx pip-audit --requirement requirements-filtered.txt --strict
