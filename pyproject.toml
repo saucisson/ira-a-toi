@@ -92,11 +92,13 @@ convention = "google"
 "tools/notify/src/notify/main.py" = ["T201", "S101"]
 # scripts/*: T201 stdout is the interface; S603 git/uv are invoked with
 # fixed literals, no untrusted input ever reaches argv.
-"scripts/*" = ["T201", "S603"]
-"tools/notify/tests/*" = [
+"scripts/*" = ["T201", "T202", "S603"]
+"ci/*" = ["T201", "PLR2004", "D"]
+"tools/notify/tests/**/*" = [
     "S101",     # asserts are the point of tests
     "D",        # docstrings optional in tests
     "PLR2004",  # magic values are fine in test scenarios
+    "I001",     # import order not enforced in tests
 ]
 
 [tool.ruff.format]
