@@ -113,6 +113,14 @@ convention = "google"
     "PLR2004",  # magic values are fine in test scenarios
     "I001",     # import order not enforced in tests
 ]
+"tools/notify/src/**/*" = [
+    "S603",
+]
+"tests/*" = [
+    "S101",
+    "D",
+    "PLR2004",
+]
 
 [tool.ruff.format]
 quote-style = "double"
