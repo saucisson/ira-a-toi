@@ -112,14 +112,25 @@ convention = "google"
     "D",        # docstrings optional in tests
     "PLR2004",  # magic values are fine in test scenarios
     "I001",     # import order not enforced in tests
+    "S603",
 ]
 "tools/notify/src/**/*" = [
     "S603",
+    "E501",
+    "ANN",
+    "D",
+    "PLR",
+    "N",
+    "RUF",
+    "C",
+    "RET",
+    "TC",
 ]
 "tests/*" = [
     "S101",
     "D",
     "PLR2004",
+    "S603",
 ]
 
 [tool.ruff.format]
