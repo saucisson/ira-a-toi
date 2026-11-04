@@ -29,9 +29,11 @@ from __future__ import annotations
 
 import hashlib
 import re
-from datetime import date, datetime, time
 from enum import StrEnum
-from typing import Literal, Self
+from typing import Literal, Self, TYPE_CHECKING
+
+if TYPE_CHECKING:
+    from datetime import date, datetime, time
 
 try:
     from pydantic import BaseModel, Field, model_validator
