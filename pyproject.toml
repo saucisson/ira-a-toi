@@ -48,6 +48,8 @@ src = ["tools/notify/src", "tools/notify/tests", "src", "scripts"]
 
 [tool.ruff.lint]
 # T20 bans print() outside CLI entry points (see per-file-ignores below).
+# Note: Most rules are disabled for existing code via per-file-ignores.
+# New code should follow all rules.
 select = [
     "B",     # flake8-bugbear: likely bugs
     "C4",    # flake8-comprehensions
@@ -107,31 +109,10 @@ convention = "google"
     "C901",
     "PLR0912",
 ]
-"tools/notify/tests/**/*" = [
-    "S101",     # asserts are the point of tests
-    "D",        # docstrings optional in tests
-    "PLR2004",  # magic values are fine in test scenarios
-    "I001",     # import order not enforced in tests
-    "S603",
-]
-"tools/notify/src/notify/**" = [
-    "S603",
-    "E501",
-    "ANN",
-    "D",
-    "PLR",
-    "N",
-    "RUF",
-    "C",
-    "RET",
-    "TC",
-]
-"tests/*" = [
-    "S101",
-    "D",
-    "PLR2004",
-    "S603",
-]
+"tools/notify/tests/**/*" = ["S101", "D", "PLR2004", "I001", "S603"]
+"tools/notify/src/**" = ["S603"]
+"tests/**" = ["S101", "D", "PLR2004", "S603"]
+"contrat/**" = ["PLR2004", "D", "I001", "N802", "N818", "ANN", "RUF012", "RUF003", "E501", "C901", "PLR0912", "S603"]
 
 [tool.ruff.format]
 quote-style = "double"
