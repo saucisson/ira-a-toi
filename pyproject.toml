@@ -114,7 +114,7 @@ convention = "google"
     "I001",     # import order not enforced in tests
     "S603",
 ]
-"tools/notify/src/**/*" = [
+"tools/notify/src/notify/**" = [
     "S603",
     "E501",
     "ANN",
